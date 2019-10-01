@@ -1,3 +1,33 @@
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+# Grabbed from github.com/github/gitignore
+
+# For venv compatibility, listing setup here:
+# python -m venv env
+# .\env\Scripts\Activate.ps1
+# python -m pip install --upgrade pip
+# python -m pip install pylint
+
+# Local History VSCode Extension
+.history/
+
+
+# Useful Powershell line for removing cached files that hadn't yet been added to ignore
+# git ls-files -c '*/__pycache__/*' | %{git rm --cached $_}
+
+# Useful URLs
+# https://django-crispy-forms.readthedocs.io/en/latest/filters.html#using-crispy-tag-because-it-rocks
+# https://gswd-a-crash-course-pycon-2014.readthedocs.io/en/latest/authviews.html
+
+### Below is default from creating python .ignore through github site
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
