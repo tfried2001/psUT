@@ -2,6 +2,7 @@ import random
 
 
 class Sensor(object):
+
     # The reading of the pressure value from the sensor is simulated.
     # The focus of the example is on the other class.
 
