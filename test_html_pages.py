@@ -21,3 +21,4 @@ page three
     converter = HtmlPagesConverter(open_file=fake_file)
     converted_text = converter.get_html_page(1)
     assert converted_text == "page two<br />"
+
