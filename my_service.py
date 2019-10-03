@@ -1,3 +1,4 @@
+from single_sign_on import SingleSignOnRegistry
 
 class MyService:
 
@@ -5,7 +6,7 @@ class MyService:
         self.sso_registry = sso_registry
 
     def handle(self, request, sso_token):
-        if sso_token:
+        if self.sso_registry.is_valid(sso_token):
             return Response("Hello {0}!".format(request.name))
         else:
             return Response("Please sign in")
