@@ -14,6 +14,21 @@
 # python -m pip install pylint, autopep8
 # python -m pip install pytest, coverage, pytest-cov
 
+# Coverage exclude file .coveragerc
+# [run]
+# omit =
+#     .history/*
+#     env/*
+#     .vscode/*
+
+# Test coverage commands
+# coverage run -m unittest
+# coverage html
+
+# pytest coverage commands
+# pytest --cov-report html:<foldername> --cov=<modulename> <rootdir>
+# pytest --cov-report html:cov_html --cov=tennis .
+
 # Local History VSCode Extension
 .history/
 
