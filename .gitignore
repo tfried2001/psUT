@@ -26,8 +26,9 @@
 # coverage html
 
 # pytest coverage commands
-# pytest --cov-report html:<foldername> --cov=<modulename> <rootdir>
+# pytest --cov-report html:<foldername> --cov=<modulename> <rootdir>     #Basic test coverage
 # pytest --cov-report html:cov_html --cov=tennis .
+# pytest --cov-report html:<foldername> --cov-branch --cov=<modulename> <rootdir>    #Checks conditional branch usage (if statement never false)
 
 # Local History VSCode Extension
 .history/
